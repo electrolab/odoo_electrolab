@@ -1,0 +1,59 @@
+<openerp>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="mod_electrolab.list">
+      <field name="name">mod_electrolab list</field>
+      <field name="model">mod_electrolab.mod_electrolab</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="mod_electrolab.action_window">
+      <field name="name">mod_electrolab window</field>
+      <field name="res_model">mod_electrolab.mod_electrolab</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="mod_electrolab.action_server">
+      <field name="name">mod_electrolab server</field>
+      <field name="model_id" ref="model_mod_electrolab_mod_electrolab"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="mod_electrolab" id="mod_electrolab.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="mod_electrolab.menu_1" parent="mod_electrolab.menu_root"/>
+    <menuitem name="Menu 2" id="mod_electrolab.menu_2" parent="mod_electrolab.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="mod_electrolab.menu_1_list" parent="mod_electrolab.menu_1"
+              action="mod_electrolab.action_window"/>
+    <menuitem name="Server to list" id="mod_electrolab" parent="mod_electrolab.menu_2"
+              action="mod_electrolab.action_server"/>
+    -->
+  </data>
+</openerp>
